@@ -11,13 +11,11 @@ const CakeContainer = (props) => {
     </div>
   )
 }
-
+//serve the central state
 const mapStateToProps = (state) =>{
-
   return {
     numOfCakes: state.numOfCakes
   }
-
 }
 
 const mapDispatchToProps = (dispatch) =>{
