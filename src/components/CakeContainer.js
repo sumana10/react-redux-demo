@@ -12,12 +12,14 @@ const CakeContainer = (props) => {
   )
 }
 //serve the central state
+//return an object
 const mapStateToProps = (state) =>{
   return {
-    numOfCakes: state.numOfCakes
+    numOfCakes: state.cake.numOfCakes
   }
 }
-
+//dispatch as parameter
+//return an object
 const mapDispatchToProps = (dispatch) =>{
   return{
     buyCake: () => dispatch(buyCake())
