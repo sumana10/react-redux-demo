@@ -13,6 +13,7 @@ const CakeContainer = (props) => {
 }
 //serve the central state
 //return an object
+//get the data from store to render into component here state.cake.numOfCakes fetch data from central store and render by numOfCakes ...
 const mapStateToProps = (state) =>{
   return {
     numOfCakes: state.cake.numOfCakes
