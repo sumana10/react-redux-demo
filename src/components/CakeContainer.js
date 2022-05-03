@@ -21,10 +21,12 @@ const mapStateToProps = (state) =>{
 }
 //dispatch as parameter
 //return an object
+//get dispatch method as parameter and allows us maps action creator to props our component
 const mapDispatchToProps = (dispatch) =>{
   return{
     buyCake: () => dispatch(buyCake())
   }
 }
 
+//connects react component to redux store
 export default connect(mapStateToProps, mapDispatchToProps)(CakeContainer)
