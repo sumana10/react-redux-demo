@@ -9,6 +9,8 @@ import IceCreamContainer from './components/IceCreamContainer';
 import NewCakeContainer from './components/NewCakeContainer';
 import ItemContainer from './components/ItemContainer';
 import UserContainer from './components/UserContainer';
+import PracticeContainer from './components/PracticeContainer';
+
 
 
 
@@ -21,7 +23,8 @@ function App() {
       <CakeContainer/>
       <HooksCakeContainer/>
       <IceCreamContainer/>
-      <NewCakeContainer/>*/}
+      <NewCakeContainer/>
+      <PracticeContainer/>*/}
       <UserContainer/>
     </div>
   </Provider>
