@@ -8,8 +8,18 @@ const NewCakeContainer = (props) => {
   return (
     <div>
       <h1>Cake Shop-{props.numOfCakes}</h1>
+      {props.numOfCakes > 0 ? (
+      <>
       <input type="text" value={number} onChange={e=> setNumber(e.target.value)}/>
-      <button onClick={() =>props.buyCake(number)}>Buy {number} cake</button>
+      
+      <button onClick={() =>props.buyCake(number) }>Buy {number} cake</button>
+      </>
+      ) : (
+      <>
+      <input type="text" value={number} onChange={e=> setNumber(0)}/> 
+      <button onClick={() =>setNumber(0) }>Buy {number} cake</button>
+      </>
+      )}
     </div>
   )
 }
