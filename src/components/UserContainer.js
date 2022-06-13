@@ -24,7 +24,7 @@ export default function UserContainer () {
       <div>
         {userData &&
           userData.users &&
-          userData.users.map(user => <p>{user.name}</p>)}
+          userData.users.map(user => <p>{user.username}</p>)}
       </div>
     </div>
   )
