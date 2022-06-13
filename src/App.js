@@ -18,14 +18,15 @@ function App() {
   return (
    <Provider store={store}>
     <div className="App">
+    <IceCreamContainer/>
       {/*<ItemContainer cake/>
       <ItemContainer/>
       <CakeContainer/>
       <HooksCakeContainer/>
       <IceCreamContainer/>
       <NewCakeContainer/>
-      <PracticeContainer/>*/}
-      <UserContainer/>
+      <PracticeContainer/>
+      <UserContainer/>*/}
     </div>
   </Provider>
   );
